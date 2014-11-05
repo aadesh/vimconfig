@@ -17,6 +17,6 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 # git submodule update --init --recursive
 # echo "Installed all plugins."
 
-echo "Intalling Fira Mono font.."
-sudo cp -r ./font/Fira\ Mono /usr/share/fonts/truetype/
-echo "Installed Fira Mono font."
+#echo "Intalling Fira Mono font.."
+#sudo cp -r ./font/Fira\ Mono /usr/share/fonts/truetype/
+#echo "Installed Fira Mono font."

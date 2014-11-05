@@ -6,10 +6,10 @@ if has("gui_running")
 endif
 
 set guioptions=Ace
-set guioptions-=T "remove tool bar
-set guioptions-=m "remove menu bar
+" set guioptions-=T "remove tool bar
+" set guioptions-=m "remove menu bar
 
-set background=light
+set background=dark
 
 "Mappings
 map <C-Q> "+gp

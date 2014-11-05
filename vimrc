@@ -7,8 +7,8 @@ call pathogen#incubate()
 call pathogen#helptags()
 
 " Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " Hightlight syntax
 syntax on
@@ -55,7 +55,7 @@ set wildmode=list:longest,full
 
 " Setting Font
 " Programming Font
-set guifont=Fira\ Mono\ 10
+" set guifont=Fira\ Mono\ 10
 colorscheme hemisu
 set background=dark
 
@@ -114,7 +114,7 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 nmap <silent> <leader>sg :so $MYGVIMRC<CR>
 
 " toggle NERDTree
-nmap <silent> <leader>D :NERDTreeToggle<CR>
+nmap <silent> <leader>a :NERDTreeToggle<CR>
 
 " toggle Tagbar
 nmap <F8> :TagbarToggle<CR>
@@ -139,10 +139,10 @@ noremap <C-L> :nohl<CR><C-L>
 nnoremap ; :
 
 " Arrow keys are evil
-noremap <Up> <nop>
-noremap <Down> <nop>
-noremap <Left> <nop>
-noremap <Right> <nop>
+" noremap <Up> <nop>
+" noremap <Down> <nop>
+" noremap <Left> <nop>
+" noremap <Right> <nop>
 
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
