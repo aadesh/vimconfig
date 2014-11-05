@@ -15,6 +15,8 @@ syntax on
 filetype off                   " required!
 filetype plugin on
 filetype plugin indent on
+" Bundle Install
+Plugin 'scrooloose/nerdtree'
 
 set colorcolumn=80
 set smartindent
@@ -56,7 +58,7 @@ set wildmode=list:longest,full
 " Setting Font
 " Programming Font
 " set guifont=Fira\ Mono\ 10
-colorscheme hemisu
+colorscheme molokai
 set background=dark
 
 " Code Folding Settings
@@ -264,3 +266,5 @@ except:
     vim.current.buffer.append("No Math")
 EOF
 endfunction
+
+let g:NERDTreeDirArrows=0
