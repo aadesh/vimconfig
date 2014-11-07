@@ -58,7 +58,7 @@ set wildmode=list:longest,full
 " Setting Font
 " Programming Font
 " set guifont=Fira\ Mono\ 10
-colorscheme molokai
+colorscheme monokai
 set background=dark
 
 " Code Folding Settings
