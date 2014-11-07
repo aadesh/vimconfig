@@ -6,7 +6,7 @@ I have been using vim since 3-4 years but never used even basic features in it. 
 
 It's pretty simple to install. Clone the repo and execute the `install.sh` file from it. It takes backup of your existing `.vimrc` and `.gvimrc` files(`~/.vimrc` and `~/.gvimrc`). In case you need to switch back to your original, just remap those original files.
     
-    $ git clone https://github.com/sagarrakshe/dotvim ~/.vim
+    $ git clone https://github.com/aadesh/vimconfig ~/.vim
     $ cd .vim
     $ ./install.sh
 
