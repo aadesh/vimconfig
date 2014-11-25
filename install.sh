@@ -8,10 +8,12 @@
 echo "Taking backup of existing vimrc files."
 mv ~/.vimrc ~/.vimrc_bak &> /dev/null
 mv ~/.gvimrc ~/.gvimrc_bak &> /dev/null
+mv ~/.zshrc ~/.zshrc_bak &> /dev/null
 
 echo "Linking to new vimrc and gvimrc files"
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
+ln -s ~/.vim/zshrc ~/.zshrc
 
 # echo "Installing plugins.."
 # git submodule update --init --recursive
