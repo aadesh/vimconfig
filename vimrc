@@ -1,6 +1,7 @@
 " First to come, use ViM defaults and not Vi (be iMproved)
 set nocompatible
 
+"colorscheme jellybeans
 " pathogen
 execute pathogen#infect()
 call pathogen#incubate()
@@ -17,8 +18,20 @@ filetype plugin on
 filetype plugin indent on
 " Bundle Install
 Plugin 'scrooloose/nerdtree'
+Bundle 'groenewege/vim-less'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'incent/Command-T'
+Bundle 'kien/ctrlp.vim'
+Bundle 'junegunn/goyo.vim'
+Bundle 'tpope/vim-surround'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'godlygeek/tabular'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'jeetsukumaran/vim-buffergator'
 
 set colorcolumn=80
+set cmdheight=2     " height of the command bar
+set hlsearch        " highlight search results
 set smartindent
 set nonumber        " don't show line numbers
 set autoindent      " always set autoindenting on
@@ -35,16 +48,19 @@ set noswapfile      " disable swap file creation
 set history=1000    " remember more commands and search history
 set undolevels=1000 " use many muchos levels of undo
 set title           " change the terminal's title
-set ruler           " show the cursor position all the time
-set showcmd         " show current command in bottom line
+set ruler   " show the cursor position all the time
+set showcmd " show current command in bottom line
+set ai      " Auto indent
+set si      " Smart indent
+set wrap    " Wrap lines                            "
 set wildignore=*.swp,*.bak,*.pyc,*.class,*/migrations/*,*/blackhole__/*,*/tmp/*,*/search*/*
 
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.  " highlight whitespace
 set viminfo='20,\"50 " Tell vim to remember certain things when we exit
 
-set hidden        " allow buffers to be hidden
-set mouse=a      " Enable mouse support in console if you are into weird shit
+set hidden  " allow buffers to be hidden
+set mouse=a " Enable mouse support in console if you are into weird shit
 set dictionary+=/usr/share/dict/words
                     " use system dictionary for auto-completion of english words
 
@@ -58,8 +74,12 @@ set wildmode=list:longest,full
 " Setting Font
 " Programming Font
 " set guifont=Fira\ Mono\ 10
-colorscheme monokai
+syntax enable
+colorscheme jellybeans
+set cursorline
+hi cursorline ctermbg=darkred guibg=darkred
 set background=dark
+
 
 " Code Folding Settings
 set foldmethod=indent   " fold based on indent
@@ -198,7 +218,7 @@ let g:tcomment#blank_lines = 0
 hi SpellBad cterm=underline,bold ctermbg=white ctermfg=black
 
 " Line number colors
-hi LineNr ctermbg=black ctermfg=yellow
+hi LineNr ctermbg=black ctermfg=grey
 
 " Autocompletion menu colors
 hi Pmenu ctermfg=black ctermbg=white
@@ -268,3 +288,8 @@ EOF
 endfunction
 
 let g:NERDTreeDirArrows=0
+
+"set tab-indent-guide widths
+set ts=2 sw=2 et
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
