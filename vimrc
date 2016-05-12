@@ -28,8 +28,9 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'jeetsukumaran/vim-buffergator'
+Plugin 'NLKNguyen/papercolor-theme'
 
-set colorcolumn=80
+set colorcolumn=100
 set cmdheight=2     " height of the command bar
 set hlsearch        " highlight search results
 set smartindent
@@ -48,11 +49,11 @@ set noswapfile      " disable swap file creation
 set history=1000    " remember more commands and search history
 set undolevels=1000 " use many muchos levels of undo
 set title           " change the terminal's title
-set ruler   " show the cursor position all the time
-set showcmd " show current command in bottom line
-set ai      " Auto indent
-set si      " Smart indent
-set wrap    " Wrap lines                            "
+set ruler           " show the cursor position all the time
+set showcmd         " show current command in bottom line
+set ai              " Auto indent
+set si              " Smart indent
+set wrap            " Wrap lines                            "
 set wildignore=*.swp,*.bak,*.pyc,*.class,*/migrations/*,*/blackhole__/*,*/tmp/*,*/search*/*
 
 set list
@@ -75,9 +76,10 @@ set wildmode=list:longest,full
 " Programming Font
 " set guifont=Fira\ Mono\ 10
 syntax enable
-colorscheme jellybeans
+"colorscheme jellybeans
+"colorscheme PaperColor-Dark
 set cursorline
-hi cursorline ctermbg=darkred guibg=darkred
+hi cursorline ctermbg=black guibg=darkred
 set background=dark
 
 
